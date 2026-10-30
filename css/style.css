@@ -1,1 +1,9 @@
+.ships-gallery
+{
+    display:grid;
+}
 
+.elissa-gallery, .lady-gallery
+{
+    display:flex;
+}
