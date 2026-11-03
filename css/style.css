@@ -1,9 +1,81 @@
 .ships-gallery
 {
     display:grid;
+    grid-template-columns: 45% 45%;
+    justify-content:space-between;
+    grid-gap: 10px 10px;
 }
 
 .elissa-gallery, .lady-gallery
 {
     display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between; 
+}
+
+.ships-gallery img, .elissa-gallery img, .lady-gallery img
+{
+    width: 50%;
+}
+
+.elissa-gallery p, .lady-gallery p, .ships-gallery p
+{
+    font-size:75%;
+    text-align:center;
+}
+
+h1
+{
+color:rgb(0, 69, 133);
+font-family: serif;
+}
+
+h2
+{
+color:rgb(110, 201, 243);
+font-family: serif;
+}
+
+/*
+header
+{
+    background-image:url()
+    height:15%;
+}
+    */
+
+nav
+{
+    background-color:aliceblue;
+}
+
+nav ul
+{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between; 
+}
+
+nav li
+{
+    background-color:black;
+    color:white;
+}
+
+img
+{
+    border: 3px solid black;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.skip
+{
+    position: relative;
+    left:-1000px;
+}
+
+.skip a:focus
+{
+    position:static;
 }
