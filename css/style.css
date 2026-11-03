@@ -2,20 +2,33 @@
 {
     display:grid;
     grid-template-columns: 45% 45%;
-    justify-content:space-between;
+    justify-content:center;
     grid-gap: 10px 10px;
+    place-items:center;
+}
+
+.ships-gallery img:nth-child(2)
+{
+    border: 3px dashed rgb(0, 69, 133);
+    padding: 5px;
+    border-radius: 10px;
 }
 
 .elissa-gallery, .lady-gallery
 {
     display:flex;
     flex-wrap:wrap;
-    justify-content:space-between; 
+    justify-content:space-evenly; 
 }
 
 .ships-gallery img, .elissa-gallery img, .lady-gallery img
 {
     width: 50%;
+}
+
+img:hover
+{
+    padding:25px;
 }
 
 .elissa-gallery p, .lady-gallery p, .ships-gallery p
@@ -28,45 +41,57 @@ h1
 {
 color:rgb(0, 69, 133);
 font-family: serif;
+text-align:center;
 }
 
 h2
 {
-color:rgb(110, 201, 243);
+color:rgb(3, 114, 165);
 font-family: serif;
 }
 
-/*
-header
-{
-    background-image:url()
-    height:15%;
-}
-    */
-
 nav
 {
-    background-color:aliceblue;
+    background-image: url("../images/irvin-aloise-kfZ3v_AItWQ-unsplash.jpg");
+    padding: 10px 0px;      
 }
 
 nav ul
 {
     display:flex;
     flex-wrap:wrap;
-    justify-content:space-between; 
+    justify-content:space-evenly; 
+    list-style-type: none;
 }
 
 nav li
 {
-    background-color:black;
+    background-color:rgb(0, 69, 133);
+    padding:10px;
+}
+
+nav a
+{
     color:white;
+    text-decoration: none;
+}
+
+nav a:hover
+{
+    color:cyan;
+}
+
+.current
+{
+    text-transform: uppercase;
+    text-decoration: underline;
 }
 
 img
 {
-    border: 3px solid black;
+    border: 3px solid rgb(0, 69, 133);
     padding: 5px;
-    border-radius: 3px;
+    border-radius: 10px;
 }
 
 .skip
@@ -75,7 +100,12 @@ img
     left:-1000px;
 }
 
-.skip a:focus
+.skip:focus
 {
     position:static;
+}
+
+p
+{
+    font-family: sans-serif;
 }
