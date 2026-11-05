@@ -3,7 +3,7 @@
     display:grid;
     grid-template-columns: 45% 45%;
     grid-gap: 10px 10px;
-    place-items:center;
+    justify-content:center;
 }
 
 .elissa-gallery, .lady-gallery
@@ -13,36 +13,46 @@
     justify-content:center; 
 }
 
-img
+.elissa-gallery img, .lady-gallery img
 {
     width: 50%;
-    border: 3px solid rgb(0, 69, 133);
+    border: 5px solid rgb(0, 69, 133);
     padding: 5px;
-    border-radius: 10px;
-    transition-property: padding, border-radius;
+    border-radius: 25px;
+    transition-property: padding, border, border-radius, background-color;
     transition-duration: 2s;
 
 
 }
 
-img:hover
+.elissa-gallery img:hover, .lady-gallery img:hover
 {
     padding:25px;
-    border-radius:50px;
+    border:10px solid rgb(68, 49, 0);
+    border-radius:0px;
+    background-color: white;
 }
 
-div img:nth-child(even)
+.ships-gallery img
+{
+    width: 50%;
+    border: 3px solid rgb(0, 69, 133);
+    padding: 5px;
+    border-radius: 10px;
+ 
+}
+
+div.ships-gallery div:nth-child(2n) img
 {
     border: 3px dashed rgb(0, 69, 133);
-    padding: 5px;
-    border-radius: 15px;
+    border-radius: 20px;
 }
 
 
 .elissa-gallery p, .lady-gallery p, .ships-gallery p
 {
     font-size:75%;
-    text-align:center;
+   
 }
 
 h1
@@ -93,7 +103,6 @@ nav a:hover
 .current
 {
     text-transform: uppercase;
-    text-decoration: underline;
 }
 
 .skip
